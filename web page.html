@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simole web page</title>
+    <style>
+        section p::first-line{
+            font-weight: bold;
+        }
+        section p::first-letter{
+            color: red;
+            font-size: 2em;
+        }
+        .container h3+h3{
+            color: darkgreen;
+        }
+        div ul li:first-child a{
+            color: red;
+        }
+        a:link{
+            color: blue;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h2>About This Page</h2>
+        <p>This is the first paragraph.It demonstrates styling with pseudo-elements</p>
+        <p>This is the second paragraph.The first line is bold and the first letter is red</p>
+    </section>
+    <div class="container">
+        <h3>First heading</h3>
+        <h3>Second heading</h3>
+    </div>
+    <div>
+        <ul>
+        <li>
+            <a href="https://example.com">Example link</a> </li>
+            <li><a href="https://openai.com">Open AI</a></li>
+            <li><a href="https://wikipedia.org">Wikipedia</a></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

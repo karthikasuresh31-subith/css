@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple blog post</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color:ghostwhite;
+        }
+        .blog-post{
+            background: #fff;
+            padding: 20px;
+            max-width: 750px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 8px;
+        }
+        .blog-post h1{
+            margin-bottom: 8px;
+        }
+        .author{
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .blog-post p::first-line{
+            font-weight: bold;
+        }
+        .blog-post p::first-letter{
+            font-size: 2em;
+            color: darkred;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-left: 4px solid #ccc;
+            color: #333;
+            background: #f0f0f0;
+            position: relative;
+         }
+        blockquote::before{
+            content: "";
+            font-size: 2em;
+            color: darkred;
+            position: absolute;
+            left: 10px;
+            top: -10px;
+        }
+        a:link{
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .headings{
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;      
+        }
+        h4+h4{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-post">
+        <h1>MY SIMPLE BLOG POST</h1>
+        <P class="author">By jack doe</P>
+        <p>
+        Blogging is one of the most effective ways to share knowledge and connect with a wide audiance.The layout and design of the blog post plays a huge role in how engaging content feels.
+
+         </p>
+        <blockquote>
+            Good design is obvious.Great design is transparent.
+        </blockquote>
+        <div class="headings" >
+            <h4>First heading</h4>
+            <h4>Second heading</h4>
+    </div>
+    </div>
+    
+</body>
+</html>
